@@ -19,6 +19,8 @@
     <th>WSTĘPNA OCENA <br> (1 najniższa, 3 najwyższa)</th>
     <th>RODZAJ</th>
     <th>NOTATKI</th>
+    <th>EDYTUJ</th>
+    <th>USUŃ</th>
     </thead>
     <tbody>
     <c:forEach items="${links}" var="link">
@@ -32,6 +34,8 @@
             <td><c:out value="${link.wstepnaOcena}"/></td>
             <td><c:out value="${link.rodzaj}"/></td>
             <td><c:out value="${link.notatki}"/></td>
+            <td><a href="/Home/links/edit/${link.id}">Edytuj </a></td>
+            <td><a href="/Home/links/delete/${link.id}">Usuń </a></td>
         </tr>
     </c:forEach>
     </tbody>
