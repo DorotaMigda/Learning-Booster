@@ -6,7 +6,9 @@ import javax.persistence.*;
 
 
 import javassist.URLClassPath;
+import org.hibernate.validator.constraints.URL;
 import org.springframework.core.io.UrlResource;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -19,25 +21,28 @@ import java.util.Date;
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
-        private String Nazwa;
-        private String Link;
-        private Double KosztPLN;
-        private Double CzasNauki;
-        private LocalDate Deadline;
-        private Integer WstepnaOcena;
-        private String Rodzaj;
-        private String Notatki;
+        private String nazwa;
+
+        private String link;
+        private Double kosztPLN;
+        private Double czasNauki;
+        @DateTimeFormat(pattern = "yyyy-MM-dd")
+        private LocalDate deadline;
+
+        private Integer wstepnaOcena;
+        private String rodzaj;
+        private String notatki;
 
         public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki) {
             this.id = id;
-            Nazwa = nazwa;
-            Link = link;
-            KosztPLN = kosztPLN;
-            CzasNauki = czasNauki;
-            Deadline = deadline;
-            WstepnaOcena = wstepnaOcena;
-            Rodzaj = rodzaj;
-            Notatki = notatki;
+            this.nazwa = nazwa;
+            this.link = link;
+            this.kosztPLN = kosztPLN;
+            this.czasNauki = czasNauki;
+            this.deadline = deadline;
+            this.wstepnaOcena = wstepnaOcena;
+            this.rodzaj = rodzaj;
+            this.notatki = notatki;
         }
 
         public Link(){}
@@ -51,69 +56,68 @@ import java.util.Date;
         }
 
         public String getNazwa() {
-            return Nazwa;
+            return nazwa;
         }
 
         public void setNazwa(String nazwa) {
-            Nazwa = nazwa;
+            this.nazwa = nazwa;
         }
 
         public String getLink() {
-            return Link;
+            return link;
         }
 
         public void setLink(String link) {
-            Link = link;
+            this.link = link;
         }
 
         public Double getKosztPLN() {
-            return KosztPLN;
+            return kosztPLN;
         }
 
         public void setKosztPLN(Double kosztPLN) {
-            KosztPLN = kosztPLN;
+            this.kosztPLN = kosztPLN;
         }
 
         public Double getCzasNauki() {
-            return CzasNauki;
+            return czasNauki;
         }
 
         public void setCzasNauki(Double czasNauki) {
-            CzasNauki = czasNauki;
+            this.czasNauki = czasNauki;
         }
 
         public LocalDate getDeadline() {
-            return Deadline;
+            return deadline;
         }
 
         public void setDeadline(LocalDate deadline) {
-            Deadline = deadline;
+            this.deadline = deadline;
         }
 
         public Integer getWstepnaOcena() {
-            return WstepnaOcena;
+            return wstepnaOcena;
         }
 
         public void setWstepnaOcena(Integer wstepnaOcena) {
-            WstepnaOcena = wstepnaOcena;
+            this.wstepnaOcena = wstepnaOcena;
         }
 
         public String getRodzaj() {
-            return Rodzaj;
+            return rodzaj;
         }
 
         public void setRodzaj(String rodzaj) {
-            Rodzaj = rodzaj;
+            this.rodzaj = rodzaj;
         }
 
         public String getNotatki() {
-            return Notatki;
+            return notatki;
         }
 
         public void setNotatki(String notatki) {
-            Notatki = notatki;
+            this.notatki = notatki;
         }
-
 
 
 
