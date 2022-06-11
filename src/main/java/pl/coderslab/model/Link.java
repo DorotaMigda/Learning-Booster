@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 
 import javassist.URLClassPath;
+import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 import org.springframework.core.io.UrlResource;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -28,7 +29,7 @@ import java.util.Date;
         private Double czasNauki;
         @DateTimeFormat(pattern = "yyyy-MM-dd")
         private LocalDate deadline;
-
+        @Range(min = 1, max = 3, message ="Wymagana liczba 1,2 lub 3")
         private Integer wstepnaOcena;
         private String rodzaj;
         private String notatki;
