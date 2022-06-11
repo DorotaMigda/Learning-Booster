@@ -6,7 +6,6 @@
 
            uri="http://www.springframework.org/tags/form" %>
 
-<%--Wymaga poprawy, edycja jednocześnie usuwa z widoku informacje dla pól należących do links--%>
 
 <html>
 
@@ -24,10 +23,14 @@
 <br>
 <br>
 
+
 <form:form method="post" modelAttribute="realizacja" action="${edit_url}">
 
 
     <form:hidden path="id"/>
+
+    <form:hidden path="link.id"/>
+
 
     <label for="planowaneTerminy">PLANOWANE TERMINY</label>
     <form:input path="planowaneTerminy"/>
@@ -36,7 +39,7 @@
     <label for="naukaNotatki">NAUKA NOTATKI</label>
     <form:input path="naukaNotatki"/>
     <form:errors path="naukaNotatki"/><br/>
-    
+
 
     <input type="submit" value="Zapisz">
 
