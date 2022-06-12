@@ -19,8 +19,7 @@
 
 <c:url var="edit_url" value="/realization/edit"/>
 
-<h3> EDYTUJ LINK </h3>
-<br>
+<h3> EDYTUJ LINK DODANY DO REALIZACJI (EDYCJA TERMINÓW I NOTATEK) </h3>
 <br>
 
 
@@ -31,6 +30,13 @@
 
     <form:hidden path="link.id"/>
 
+    <label for="link.nazwa">NAZWA</label>
+    <form:input path="link.nazwa"/>
+    <form:errors path="link.nazwa"/><br/>
+
+    <label for="link.link">LINK</label>
+    <form:input path="link.link"/>
+    <form:errors path="link.link"/><br/>
 
     <label for="planowaneTerminy">PLANOWANE TERMINY</label>
     <form:input path="planowaneTerminy"/>
