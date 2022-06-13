@@ -22,6 +22,8 @@
     <th>EDYTUJ</th>
     <th>USUŃ</th>
     <th>DODAJ DO REALIZACJI</th>
+
+
     </thead>
     <tbody>
     <c:forEach items="${links}" var="link">
@@ -37,7 +39,13 @@
             <td><c:out value="${link.notatki}"/></td>
             <td><a href="/Home/links/edit/${link.id}">Edytuj </a></td>
             <td><a href="/Home/links/delete/${link.id}">Usuń </a></td>
-            <td><a href="/Home/realization/add/${link.id}">Dodaj do realizacji </a></td>
+
+
+      <td>     <c:if test="${!link.realizacja.activelink}">
+            <a href="/Home/realization/add/${link.id}">Dodaj do realizacji </a>
+            </c:if> </td>
+
+
         </tr>
     </c:forEach>
     </tbody>

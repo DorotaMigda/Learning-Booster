@@ -33,8 +33,10 @@ import java.util.Date;
         private Integer wstepnaOcena;
         private String rodzaj;
         private String notatki;
+       @OneToOne (mappedBy = "link",cascade= CascadeType.REMOVE)
+      private Realizacja realizacja;
 
-        public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki) {
+        public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki, Realizacja realizacja) {
             this.id = id;
             this.nazwa = nazwa;
             this.link = link;
@@ -44,6 +46,7 @@ import java.util.Date;
             this.wstepnaOcena = wstepnaOcena;
             this.rodzaj = rodzaj;
             this.notatki = notatki;
+           this.realizacja=realizacja;
         }
 
         public Link(){}
@@ -120,6 +123,12 @@ import java.util.Date;
             this.notatki = notatki;
         }
 
+      public Realizacja getRealizacja() {
+            return realizacja;
+       }
 
+        public void setRealzacja(Realizacja realizacja) {
+           this.realizacja = realizacja;
+       }
 
 }

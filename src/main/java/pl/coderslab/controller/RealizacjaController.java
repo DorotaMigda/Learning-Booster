@@ -14,6 +14,7 @@ import pl.coderslab.service.RealizacjaService;
 import javax.persistence.EntityNotFoundException;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("realization")
@@ -38,6 +39,8 @@ public class RealizacjaController {
 
 
     @GetMapping("/add/{link.id}")
+    //analogicznie jak poniżej z edycją i path variable
+
     public String getAddForm(Model m) {
         m.addAttribute("realizacja", new Realizacja());
         return "realization/addrealization";
@@ -45,10 +48,13 @@ public class RealizacjaController {
 
 
     @PostMapping("/add/{link.id}")
+
+
     public String addRealizacja(@Valid final Realizacja realizacja, final BindingResult validationResult) {
         if (validationResult.hasErrors()) {
             return "realization/addrealization";
         }
+
         realizacjaService.add(realizacja);
         return "redirect:/realization/all";
     }

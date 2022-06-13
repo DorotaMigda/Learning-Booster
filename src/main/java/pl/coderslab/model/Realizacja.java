@@ -14,6 +14,7 @@ public class Realizacja {
     private String planowaneTerminy;
     private String naukaNotatki;
 
+
     public Realizacja(Long id, Link link, String planowaneTerminy, String naukaNotatki) {
         this.id = id;
         this.link = link;
@@ -53,4 +54,11 @@ public class Realizacja {
     public void setNaukaNotatki(String naukaNotatki) {
         this.naukaNotatki = naukaNotatki;
     }
+
+    public boolean isActivelink(){
+        return link!=null;
+    }
+
+
+
 }
