@@ -10,9 +10,11 @@ import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 import org.springframework.core.io.UrlResource;
 import org.springframework.format.annotation.DateTimeFormat;
+import pl.coderslab.converter.LocalDateAttributeConverter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Date;
 
     @Entity
@@ -25,9 +27,12 @@ import java.util.Date;
         private String nazwa;
 
         private String link;
+
+        @Range(min = 0, message ="Koszt nie może być wartością ujemną")
         private Double kosztPLN;
         private Double czasNauki;
         @DateTimeFormat(pattern = "yyyy-MM-dd")
+        @Convert(converter = LocalDateAttributeConverter.class)
         private LocalDate deadline;
         @Range(min = 1, max = 3, message ="Wymagana liczba 1,2 lub 3")
         private Integer wstepnaOcena;
