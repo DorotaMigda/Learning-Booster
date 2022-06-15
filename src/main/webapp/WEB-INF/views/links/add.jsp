@@ -50,7 +50,7 @@
     </div>
 
     <div>
-        <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny)</label>
+        <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny, kurs online)</label>
 <%--        <form:input path="rodzaj" id="rodzaj" type="text"/>--%>
 
         <form:select path="rodzaj">
@@ -58,6 +58,7 @@
             <form:option value="Książka" label="Książka"/>
             <form:option value="Film" label="Film"/>
             <form:option value="Kurs stacjonarny" label="Kurs stacjonarny"/>
+            <form:option value="Kurs online" label="Kurs online"/>
         </form:select>
 
         <form:errors path="rodzaj"/>

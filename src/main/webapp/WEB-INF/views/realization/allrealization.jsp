@@ -51,6 +51,8 @@
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
-<a href="/Home/links/all"> Wszystkie linki </a>
+<a href="/Home/links/all"> Wszystkie linki </a><br>
+
+<br> <a href ="/Home/rating/add">Dodaj link do oceny</a> <br>
 </body>
 </html>

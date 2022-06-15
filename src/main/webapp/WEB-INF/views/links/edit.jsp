@@ -67,6 +67,7 @@
         <form:option value="Książka" label="Książka"/>
         <form:option value="Film" label="Film"/>
         <form:option value="Kurs stacjonarny" label="Kurs stacjonarny"/>
+        <form:option value="Kurs online" label="Kurs online"/>
     </form:select>
 
     <form:errors path="rodzaj"/><br/>

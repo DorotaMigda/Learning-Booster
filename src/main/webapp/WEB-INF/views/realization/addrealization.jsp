@@ -49,6 +49,7 @@
 <a href="/Home/links/all"> Powrót na stronę wszystkich linków </a>
 <br>
 
+<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
 
 </body>
 </html>

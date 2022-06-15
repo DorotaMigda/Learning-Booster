@@ -20,7 +20,8 @@
 <h3> LEARNING BOOSTER <br> STRONA GŁÓWNA </h3>
 <br> <a href=links/add> Dodaj link </a> <br>
 <br> <a href =links/all\> Wszystkie linki </a> <br>
-<br> <a href =realization/all>Linki dodane do realizacji</a>
+<br> <a href =realization/all>Linki dodane do realizacji</a><br>
+<br> <a href =rating/all\> Linki dodane do oceny </a> <br>
 </body>
 </html>
 
