@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<%--<c:out value="${realization.link.link}"/>--%>
-<%--${realization.link.link}--%>
+<c:out value="${rating.link.link}"/>
+
 
 
 <form:form method="post" modelAttribute="ocena">

@@ -22,6 +22,7 @@
     <th>EDYTUJ</th>
     <th>USUŃ</th>
     <th>DODAJ DO REALIZACJI</th>
+    <th>DODAJ DO OCENY</th>
 
 
     </thead>
@@ -45,6 +46,10 @@
             <a href="/Home/realization/add/${link.id}">Dodaj do realizacji </a>
             </c:if> </td>
 
+            <td>     <c:if test="${!link.ocena.activelinkocena}">
+                <a href="/Home/rating/add/${link.id}">Dodaj do oceny </a>
+            </c:if> </td>
+
 
         </tr>
     </c:forEach>
@@ -56,7 +61,8 @@
 <br>
 <a href="/Home/links/add"> Dodaj link </a> <br>
 
-<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a>
+<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
+<br> <a href ="/Home/rating/all">Linki dodane do oceny</a>
 </body>
 </html>
 

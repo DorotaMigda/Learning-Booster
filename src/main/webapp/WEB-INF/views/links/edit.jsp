@@ -51,17 +51,13 @@
     <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
 
     <form:input path="wstepnaOcena"/>
-<%--    <form:select path="wstepnaOcena">--%>
-<%--        <form:option value="-" label="Wybierz"/>--%>
-<%--        <form:option value="1" label="1"/>--%>
-<%--        <form:option value="2" label="2"/>--%>
-<%--        <form:option value="3" label="3"/>--%>
-<%--    </form:select>--%>
+
 
     <form:errors path="wstepnaOcena"/><br/>
 
     <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny)</label>
-<%--    <form:input path="rodzaj"/>--%>
+
+
     <form:select path="rodzaj">
         <form:option value="-" label="Wybierz"/>
         <form:option value="Książka" label="Książka"/>

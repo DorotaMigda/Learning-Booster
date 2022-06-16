@@ -27,6 +27,15 @@
 
     <form:hidden path="id"/>
 
+    <form:hidden path="link.id"/>
+
+    <label for="link.nazwa">NAZWA</label>
+    <form:input path="link.nazwa"/>
+    <form:errors path="link.nazwa"/><br/>
+
+    <label for="link.link">LINK</label>
+    <form:input path="link.link"/>
+    <form:errors path="link.link"/><br/>
 
     <label for="ocenaKoncowa">OCENA KOŃCOWA</label>
     <form:input path="ocenaKoncowa"/>
@@ -45,11 +54,17 @@
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 
-<%--<br> <a href =/Home/links/all\> Powrót na stronę wszystkich linków </a>--%>
 
-<%--<br>--%>
+<br> <a href =/Home/links/all\> Powrót na stronę wszystkich linków </a>
 
-<%--<br> <a href =/Home/realization/all> Powrót na stronę linków dodanych do realizacji </a>--%>
+<br>
+
+<br> <a href =/Home/realization/all> Powrót na stronę linków dodanych do realizacji </a>
+
+<br>
+
+<br> <a href =/Home/rating/all> Powrót na stronę linków dodanych do oceny </a>
+
 </body>
 
 </html>

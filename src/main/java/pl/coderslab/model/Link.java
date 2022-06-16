@@ -30,6 +30,7 @@ import java.util.Date;
 
         @Range(min = 0, message ="Koszt nie może być wartością ujemną")
         private Double kosztPLN;
+        @Range(min = 0, message ="Czas nauki nie może być wartością ujemną")
         private Double czasNauki;
         @DateTimeFormat(pattern = "yyyy-MM-dd")
         @Convert(converter = LocalDateAttributeConverter.class)
@@ -41,7 +42,9 @@ import java.util.Date;
        @OneToOne (mappedBy = "link",cascade= CascadeType.REMOVE)
       private Realizacja realizacja;
 
-        public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki, Realizacja realizacja) {
+        @OneToOne (mappedBy = "link",cascade= CascadeType.REMOVE)
+        private Ocena ocena;
+        public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki, Realizacja realizacja, Ocena ocena) {
             this.id = id;
             this.nazwa = nazwa;
             this.link = link;
@@ -52,6 +55,7 @@ import java.util.Date;
             this.rodzaj = rodzaj;
             this.notatki = notatki;
            this.realizacja=realizacja;
+           this.ocena=ocena;
         }
 
         public Link(){}
@@ -132,8 +136,13 @@ import java.util.Date;
             return realizacja;
        }
 
-        public void setRealzacja(Realizacja realizacja) {
+        public void setRealizacja(Realizacja realizacja) {
            this.realizacja = realizacja;
        }
 
-}
+       public Ocena getOcena(){return ocena;}
+
+        public void setOcena(Ocena ocena) {
+            this.ocena = ocena;
+        }
+    }

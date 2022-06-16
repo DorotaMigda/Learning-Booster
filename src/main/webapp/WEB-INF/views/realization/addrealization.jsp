@@ -15,7 +15,6 @@
 </head>
 <body>
 <c:out value="${realization.link.link}"/>
-<%--${realization.link.link}--%>
 
 
 <form:form method="post" modelAttribute="realizacja">

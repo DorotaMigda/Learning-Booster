@@ -52,7 +52,6 @@
 <br>
 <br>
 <a href="/Home/links/all"> Wszystkie linki </a><br>
-
-<br> <a href ="/Home/rating/add">Dodaj link do oceny</a> <br>
+<br> <a href="/Home/rating/all"> Linki dodane do oceny </a> <br>
 </body>
 </html>

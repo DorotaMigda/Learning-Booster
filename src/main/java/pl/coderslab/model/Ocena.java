@@ -12,16 +12,16 @@ public class Ocena {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-//    @OneToOne
-//    private Link link;
+    @OneToOne
+    private Link link;
     @Range(min = 1, max = 3, message ="Wymagana liczba 1,2 lub 3")
     private Integer ocenaKoncowa;
     private String ocenaNotatki;
 
 
-    public Ocena (Long id, Integer ocenaKoncowa, String ocenaNotatki) {
+    public Ocena (Long id, Link link, Integer ocenaKoncowa, String ocenaNotatki) {
         this.id = id;
-//        this.link = link;
+        this.link = link;
         this.ocenaKoncowa = ocenaKoncowa;
         this.ocenaNotatki = ocenaNotatki;
     }
@@ -35,13 +35,13 @@ public class Ocena {
         this.id = id;
     }
 
-//    public Link getLink() {
-//        return link;
-//    }
-//
-//    public void setLink(Link link) {
-//        this.link = link;
-//    }
+    public Link getLink() {
+        return link;
+    }
+
+    public void setLink(Link link) {
+        this.link = link;
+    }
 
     public Integer getOcenaKoncowa() {
         return ocenaKoncowa;
@@ -57,5 +57,9 @@ public class Ocena {
 
     public void setOcenaNotatki(String ocenaNotatki) {
         this.ocenaNotatki = ocenaNotatki;
+    }
+
+    public boolean isActivelinkocena(){
+        return link!=null;
     }
 }

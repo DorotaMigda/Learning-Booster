@@ -87,15 +87,16 @@ public class LinkController {
         return "redirect:/links/all";
 
     }
-    @GetMapping("/show/{id}")
+//    @GetMapping("/show/{id}")
+//
+//    public String showLink(Model model, @PathVariable long id) {
+//
+//        model.addAttribute("link", linkService.get(id).orElseThrow(EntityNotFoundException::new));
+//
+//        return "links/show";
+//
+//    }
 
-    public String showLink(Model model, @PathVariable long id) {
-
-        model.addAttribute("link", linkService.get(id).orElseThrow(EntityNotFoundException::new));
-
-        return "links/show";
-
-    }
 }
 
 

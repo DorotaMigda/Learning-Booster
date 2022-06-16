@@ -10,7 +10,8 @@ public class LocalDateAttributeConverter implements AttributeConverter<LocalDate
 
     @Override
     public Date convertToDatabaseColumn(LocalDate locDate) {
-        return locDate == null ? null : Date.valueOf(locDate.plusDays(1));
+//        return locDate == null ? null : Date.valueOf(locDate.plusDays(1));
+        return locDate == null ? null : Date.valueOf(locDate);
     }
 
     @Override

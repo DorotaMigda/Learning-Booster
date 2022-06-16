@@ -30,28 +30,19 @@
         <form:errors path="czasNauki"/>
     </div>
     <div>
-
         <label for="deadline">DEADLINE NA DECYZJĘ</label>
         <form:input path="deadline" id="deadline" type="date"/>
         <form:errors path="deadline"/>
     </div>
-
     <div>
         <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
         <form:input path="wstepnaOcena" id="wstepnaOcena" type="text"/>
-<%--        <form:select path="wstepnaOcena">--%>
-<%--            <form:option value="-" label="Wybierz"/>--%>
-<%--            <form:option value="1" label="1"/>--%>
-<%--            <form:option value="2" label="2"/>--%>
-<%--            <form:option value="3" label="3"/>--%>
-<%--        </form:select>--%>
         <form:errors path="wstepnaOcena"/>
-
     </div>
 
     <div>
         <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny, kurs online)</label>
-<%--        <form:input path="rodzaj" id="rodzaj" type="text"/>--%>
+
 
         <form:select path="rodzaj">
             <form:option value="-" label="Wybierz"/>
@@ -72,7 +63,7 @@
     <div>
         <input type="submit">
     </div>
-<%--    <form:errors path="*"/>--%>
+
 </form:form>
 <br>
 <a href="/Home/"> Powrót na stronę główną </a>

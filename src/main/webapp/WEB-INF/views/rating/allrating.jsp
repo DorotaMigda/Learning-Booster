@@ -11,6 +11,9 @@
 <br>
 <table border="1">
     <thead>
+    <th>LINK ID </th>
+    <th>Link NAZWA </th>
+    <th>LINK </th>
     <th>OCENA ID </th>
     <th>OCENA KOŃCOWA</th>
     <th>NOTATKI PO REALIZACJI</th>
@@ -21,6 +24,9 @@
     <tbody>
     <c:forEach items="${ocena}" var="ocena">
         <tr>
+            <td><c:out value="${ocena.link.id}"/></td>
+            <td><c:out value="${ocena.link.nazwa}"/></td>
+            <td><c:out value="${ocena.link.link}"/></td>
             <td><c:out value="${ocena.id}"/></td>
             <td><c:out value="${ocena.ocenaKoncowa}"/></td>
             <td><c:out value="${ocena.ocenaNotatki}"/></td>

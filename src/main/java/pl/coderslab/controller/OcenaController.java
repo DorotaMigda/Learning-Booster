@@ -39,13 +39,13 @@ public class OcenaController {
 
 
 
-    @GetMapping("/add")
+    @GetMapping("/add/{link.id}")
     public String getAddForm(Model m) {
         m.addAttribute("ocena", new Ocena());
         return "rating/addrating";
     }
 
-    @PostMapping("/add")
+    @PostMapping("/add/{link.id}")
     public String addOcena(@Valid final Ocena ocena, final BindingResult validationResult) {
         if (validationResult.hasErrors()) {
             return "rating/addrating";
