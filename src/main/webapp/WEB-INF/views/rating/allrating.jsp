@@ -3,10 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title> DODANE DO OCENY </title>
+    <title> OCENIONE </title>
 </head>
 <body>
-<h3> LINKI DODANE DO OCENY </h3>
+<h3> LINKI OCENIONE</h3>
 <br>
 <br>
 <table border="1">
@@ -17,7 +17,7 @@
     <th>OCENA ID </th>
     <th>OCENA KOŃCOWA</th>
     <th>NOTATKI PO REALIZACJI</th>
-    <th>USUŃ Z OCENY</th>
+    <th>USUŃ Z OCENIONYCH</th>
     <th>EDYTUJ OCENĘ</th>
 
     </thead>

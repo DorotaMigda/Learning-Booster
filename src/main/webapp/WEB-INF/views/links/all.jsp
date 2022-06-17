@@ -21,8 +21,8 @@
     <th>NOTATKI</th>
     <th>EDYTUJ</th>
     <th>USUŃ</th>
-    <th>DODAJ DO REALIZACJI</th>
-    <th>DODAJ DO OCENY</th>
+    <th>STATUS</th>
+<%--    <th>OCENA I NOTATKI PO REALIZACJI</th>--%>
 
 
     </thead>
@@ -42,13 +42,29 @@
             <td><a href="/Home/links/delete/${link.id}">Usuń </a></td>
 
 
-      <td>     <c:if test="${!link.realizacja.activelink}">
+      <td>     <c:if test="${!link.realizacja.activelink and !link.ocena.activelinkocena}">
             <a href="/Home/realization/add/${link.id}">Dodaj do realizacji </a>
-            </c:if> </td>
+            </c:if>
 
-            <td>     <c:if test="${!link.ocena.activelinkocena}">
-                <a href="/Home/rating/add/${link.id}">Dodaj do oceny </a>
-            </c:if> </td>
+          <c:if test="${link.realizacja.activelink}">
+              Dodany do realizacji <br>
+          </c:if>
+
+          <c:if test="${link.ocena.activelinkocena}">
+              Oceniony
+          </c:if>
+
+<%--      </td>--%>
+
+<%--            <td>     <c:if test="${!link.ocena.activelinkocena}">--%>
+<%--                <a href="/Home/rating/add/${link.id}">Dodaj ocenę </a>--%>
+<%--            </c:if>--%>
+
+<%--                <c:if test="${link.ocena.activelinkocena}">--%>
+<%--                    Oceniony--%>
+<%--                </c:if>--%>
+
+<%--            </td>--%>
 
 
         </tr>
@@ -59,10 +75,10 @@
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
-<a href="/Home/links/add"> Dodaj link </a> <br>
+<a href="/Home/links/add"> Dodaj nowy link </a> <br>
 
 <br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
-<br> <a href ="/Home/rating/all">Linki dodane do oceny</a>
+<br> <a href ="/Home/rating/all">Linki ocenione</a>
 </body>
 </html>
 

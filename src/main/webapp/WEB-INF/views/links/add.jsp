@@ -70,7 +70,7 @@
 <br>
 
 <br>
-<a href="/Home/links/all"> Powrót na stronę wszystkich linków </a>
+<a href="/Home/links/all"> Wszystkie linki </a>
 <br>
 
 </body>

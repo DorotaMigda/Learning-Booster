@@ -26,8 +26,11 @@
     <th>REALIZACJA ID</th>
     <th>PLANOWANE TERMINY</th>
     <th>NOTATKI W CZASIE NAUKI</th>
-    <th>USUŃ LINK Z REALIZACJI</th>
+    <th>USUŃ Z REALIZOWANYCH</th>
     <th>EDYTUJ REALIZACJĘ</th>
+
+    <th>DODAJ OCENĘ</th>
+
 
     </thead>
     <tbody>
@@ -43,6 +46,16 @@
             <td><c:out value="${realization.naukaNotatki}"/></td>
             <td><a href="/Home/realization/delete/${realization.id}">Usuń </a></td>
             <td><a href="/Home/realization/edit/${realization.id}">Edytuj </a></td>
+
+            <td>     <c:if test="${!realization.link.ocena.activelinkocena}">
+                <a href="/Home/rating/add/${realization.link.id}">Dodaj ocenę </a>
+            </c:if>
+
+                <c:if test="${realization.link.ocena.activelinkocena}">
+                    Oceniony
+                </c:if>
+            </td>
+
         </tr>
     </c:forEach>
     </tbody>
@@ -52,6 +65,6 @@
 <br>
 <br>
 <a href="/Home/links/all"> Wszystkie linki </a><br>
-<br> <a href="/Home/rating/all"> Linki dodane do oceny </a> <br>
+<br> <a href="/Home/rating/all"> Linki ocenione </a> <br>
 </body>
 </html>

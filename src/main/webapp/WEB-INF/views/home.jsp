@@ -18,10 +18,10 @@
 <body>
 <c:url var="home_url" value="/"/>
 <h3> LEARNING BOOSTER <br> STRONA GŁÓWNA </h3>
-<br> <a href=links/add> Dodaj link </a> <br>
+<br> <a href=links/add> Dodaj nowy link </a> <br>
 <br> <a href =links/all\> Wszystkie linki </a> <br>
 <br> <a href =realization/all>Linki dodane do realizacji</a><br>
-<br> <a href =rating/all\> Linki dodane do oceny </a> <br>
+<br> <a href =rating/all\> Linki ocenione </a> <br>
 </body>
 </html>
 
