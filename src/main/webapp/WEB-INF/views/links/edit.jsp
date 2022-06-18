@@ -36,11 +36,12 @@
     <form:errors path="link"/><br/>
 
     <label for="kosztPLN">KOSZT W PLN</label>
-    <form:input path="kosztPLN"/>
+<%--    <form:input path="kosztPLN"/>--%>
+    <form:input path="kosztPLN" type="number" min="0" step=".01"/>
     <form:errors path="kosztPLN"/><br/>
 
     <label for="czasNauki">CZAS NAUKI (podaj szacunkowy czas w godzinach)</label>
-    <form:input path="czasNauki"/>
+    <form:input path="czasNauki" type="number" min="0" step=".01"/>
     <form:errors path="czasNauki"/><br/>
 
     <label for="deadline">DEADLINE NA DECYZJĘ</label>
@@ -49,10 +50,7 @@
     <form:errors path="deadline"/><br/>
 
     <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
-
-    <form:input path="wstepnaOcena"/>
-
-
+    <form:input path="wstepnaOcena" type="number"/>
     <form:errors path="wstepnaOcena"/><br/>
 
     <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny)</label>

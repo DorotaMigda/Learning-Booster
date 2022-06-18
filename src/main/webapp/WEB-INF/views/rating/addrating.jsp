@@ -8,9 +8,6 @@
 </head>
 <body>
 
-<%--<c:out value="${rating.link.link}"/>--%>
-
-
 
 <form:form method="post" modelAttribute="ocena">
 
@@ -28,7 +25,7 @@
 
     <div>
         <label for="ocenaKoncowa">OCENA KOŃCOWA (1 najniższa, 3 najwyższa) </label>
-        <form:input path="ocenaKoncowa" id="ocenaKoncowa" type="text"/>
+        <form:input path="ocenaKoncowa" id="ocenaKoncowa" type="number"/>
         <form:errors path="ocenaKoncowa"/>
     </div>
 

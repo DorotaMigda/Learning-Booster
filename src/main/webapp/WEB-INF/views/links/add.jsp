@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <html>
 <head>
     <title>DODAJ NOWY LINK</title>
@@ -21,12 +22,12 @@
     </div>
     <div>
         <label for="kosztPLN">KOSZT W PLN</label>
-        <form:input path="kosztPLN" id="kosztPLN" type="text"/>
+        <form:input path="kosztPLN" id="kosztPLN" type="number" min="0" value="0" step=".01"/>
         <form:errors path="kosztPLN"/>
     </div>
     <div>
         <label for="czasNauki">CZAS NAUKI (podaj szacunkowy czas w godzinach)</label>
-        <form:input path="czasNauki" id="czasNauki" type="text"/>
+        <form:input path="czasNauki" id="czasNauki" type="number" min="0" value="0" step=".01"/>
         <form:errors path="czasNauki"/>
     </div>
     <div>
@@ -36,7 +37,7 @@
     </div>
     <div>
         <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
-        <form:input path="wstepnaOcena" id="wstepnaOcena" type="text"/>
+        <form:input path="wstepnaOcena" id="wstepnaOcena" type="number"/>
         <form:errors path="wstepnaOcena"/>
     </div>
 

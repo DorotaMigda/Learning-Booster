@@ -36,7 +36,7 @@
     <h2>EDYTUJ OCENĘ I NOTATKI</h2>
 
     <label for="ocenaKoncowa">OCENA KOŃCOWA</label>
-    <form:input path="ocenaKoncowa"/>
+    <form:input path="ocenaKoncowa" type="number"/>
     <form:errors path="ocenaKoncowa"/><br/>
 
     <label for="ocenaNotatki">NOTATKI PO REALIZACJI</label>
