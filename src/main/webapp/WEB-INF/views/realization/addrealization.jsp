@@ -35,7 +35,7 @@
     </div>
 
     <div>
-        <input type="submit">
+        <input type="submit" value="Dodaj do realizacji">
     </div>
 
 </form:form>

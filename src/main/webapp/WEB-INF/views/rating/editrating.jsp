@@ -6,7 +6,6 @@
 
            uri="http://www.springframework.org/tags/form" %>
 
-
 <html>
 
 <head>
@@ -18,9 +17,6 @@
 <body>
 
 <c:url var="edit_url" value="/rating/edit"/>
-
-<h3> EDYTUJ LINK DODANY DO OCENY </h3>
-<br>
 
 
 <form:form method="post" modelAttribute="ocena" action="${edit_url}">
@@ -36,6 +32,8 @@
     <label for="link.link">LINK</label>
     <form:input path="link.link"/>
     <form:errors path="link.link"/><br/>
+
+    <h2>EDYTUJ OCENĘ I NOTATKI</h2>
 
     <label for="ocenaKoncowa">OCENA KOŃCOWA</label>
     <form:input path="ocenaKoncowa"/>

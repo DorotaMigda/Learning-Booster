@@ -77,16 +77,22 @@ public class LinkController {
 
     }
 
-
     @GetMapping("/delete/{id}")
-
-    public String deleteLink(@PathVariable Long id) {
-
-        linkService.delete(id);
-
-        return "redirect:/links/all";
-
+    public String deleteLink(@PathVariable Long id, Model model) {
+        model.addAttribute("id", linkService.get(id));
+        return "safedelete";
     }
+
+    @PostMapping("/delete/{id}")
+    public String deleteLink(Model model,@PathVariable Long id, @RequestParam String confirm) {
+        if (confirm.equals("yes")) {
+            linkService.delete(id);
+        }
+        return "redirect:/links/all";
+    }
+
+
+
 //    @GetMapping("/show/{id}")
 //
 //    public String showLink(Model model, @PathVariable long id) {

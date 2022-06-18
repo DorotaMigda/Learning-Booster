@@ -13,6 +13,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import pl.coderslab.converter.LocalDateAttributeConverter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;

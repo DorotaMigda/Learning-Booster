@@ -2,12 +2,12 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
-    <title>DODAJ LINK</title>
+    <title>DODAJ NOWY LINK</title>
 </head>
 <body>
 <form:form method="post" modelAttribute="link">
 
-    <h3> DODAJ LINK </h3>
+    <h3> DODAJ NOWY LINK </h3>
     <br>
     <div>
         <label for="nazwa">NAZWA</label>
@@ -61,7 +61,7 @@
     </div>
 
     <div>
-        <input type="submit">
+        <input type="submit" value="Zapisz">
     </div>
 
 </form:form>

@@ -8,13 +8,22 @@
 </head>
 <body>
 
-<c:out value="${rating.link.link}"/>
+<%--<c:out value="${rating.link.link}"/>--%>
 
 
 
 <form:form method="post" modelAttribute="ocena">
 
+
+
+<%--    <form:hidden path="id"/>--%>
+<%--    <form:hidden path="link.id"/>--%>
     <h3> DODAJ DO OCENY </h3>
+
+ <label for="link.nazwa">NAZWA</label>
+<form:input path="link.nazwa" id="link.nazwa" type="text"/>
+<form:errors path="link.nazwa"/><br/>
+
 
 
     <div>
@@ -30,7 +39,7 @@
     </div>
 
     <div>
-        <input type="submit">
+        <input type="submit" value="Zapisz">
     </div>
 
 </form:form>
@@ -40,7 +49,7 @@
 <br>
 
 <br>
-<a href="/Home/links/all"> Powrót na stronę wszystkich linków </a>
+<a href="/Home/links/all"> Wszystkie linki </a>
 <br>
 
 <br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>

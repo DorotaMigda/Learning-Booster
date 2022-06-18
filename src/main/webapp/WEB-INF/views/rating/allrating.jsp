@@ -15,7 +15,7 @@
     <th>Link NAZWA </th>
     <th>LINK </th>
     <th>OCENA ID </th>
-    <th>OCENA KOŃCOWA</th>
+    <th>OCENA KOŃCOWA<br>(1 najniższa, 3 najwyższa)</th>
     <th>NOTATKI PO REALIZACJI</th>
     <th>USUŃ Z OCENIONYCH</th>
     <th>EDYTUJ OCENĘ</th>
