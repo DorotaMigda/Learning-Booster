@@ -17,10 +17,9 @@
 <%--    <form:hidden path="link.id"/>--%>
     <h3> DODAJ DO OCENY </h3>
 
- <label for="link.nazwa">NAZWA</label>
-<form:input path="link.nazwa" id="link.nazwa" type="text"/>
-<form:errors path="link.nazwa"/><br/>
-
+<%-- <label for="link.nazwa">NAZWA</label>--%>
+<%--<form:input path="link.nazwa" id="link.nazwa" type="text"/>--%>
+<%--<form:errors path="link.nazwa"/><br/>--%>
 
 
     <div>
