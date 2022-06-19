@@ -17,6 +17,7 @@ import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
@@ -34,9 +35,9 @@ import java.util.Date;
         private String link;
 
         @Range(min = 0, message ="Koszt nie może być wartością ujemną")
-        private Double kosztPLN;
+        private BigDecimal kosztPLN;
         @Range(min = 0, message ="Czas nauki nie może być wartością ujemną")
-        private Double czasNauki;
+        private BigDecimal czasNauki;
         @DateTimeFormat(pattern = "yyyy-MM-dd")
         @Convert(converter = LocalDateAttributeConverter.class)
         private LocalDate deadline;
@@ -49,7 +50,7 @@ import java.util.Date;
 
         @OneToOne (mappedBy = "link",cascade= CascadeType.REMOVE)
         private Ocena ocena;
-        public Link(Long id, String nazwa, String link, Double kosztPLN, Double czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki, Realizacja realizacja, Ocena ocena) {
+        public Link(Long id, String nazwa, String link, BigDecimal kosztPLN, BigDecimal czasNauki, LocalDate deadline, Integer wstepnaOcena, String rodzaj, String notatki, Realizacja realizacja, Ocena ocena) {
             this.id = id;
             this.nazwa = nazwa;
             this.link = link;
@@ -89,19 +90,19 @@ import java.util.Date;
             this.link = link;
         }
 
-        public Double getKosztPLN() {
+        public BigDecimal getKosztPLN() {
             return kosztPLN;
         }
 
-        public void setKosztPLN(Double kosztPLN) {
+        public void setKosztPLN(BigDecimal kosztPLN) {
             this.kosztPLN = kosztPLN;
         }
 
-        public Double getCzasNauki() {
+        public BigDecimal getCzasNauki() {
             return czasNauki;
         }
 
-        public void setCzasNauki(Double czasNauki) {
+        public void setCzasNauki(BigDecimal czasNauki) {
             this.czasNauki = czasNauki;
         }
 
