@@ -10,7 +10,7 @@
 <br>
 <table border="1">
     <thead>
-    <th>ID</th>
+<%--    <th>ID</th>--%>
     <th>NAZWA</th>
     <th>LINK</th>
     <th>KOSZT <br> W PLN</th>
@@ -22,14 +22,13 @@
     <th>EDYTUJ</th>
     <th>USUŃ</th>
     <th>STATUS</th>
-<%--    <th>OCENA I NOTATKI PO REALIZACJI</th>--%>
 
 
     </thead>
     <tbody>
     <c:forEach items="${links}" var="link">
         <tr>
-            <td><c:out value="${link.id}"/></td>
+<%--            <td><c:out value="${link.id}"/></td>--%>
             <td><c:out value="${link.nazwa}"/></td>
             <td><c:out value="${link.link}"/></td>
             <td><c:out value="${link.kosztPLN}"/></td>
@@ -54,17 +53,6 @@
               Oceniony
           </c:if>
 
-<%--      </td>--%>
-
-<%--            <td>     <c:if test="${!link.ocena.activelinkocena}">--%>
-<%--                <a href="/Home/rating/add/${link.id}">Dodaj ocenę </a>--%>
-<%--            </c:if>--%>
-
-<%--                <c:if test="${link.ocena.activelinkocena}">--%>
-<%--                    Oceniony--%>
-<%--                </c:if>--%>
-
-<%--            </td>--%>
 
 
         </tr>

@@ -59,6 +59,4 @@ public class Realizacja {
         return link!=null;
     }
 
-
-
 }

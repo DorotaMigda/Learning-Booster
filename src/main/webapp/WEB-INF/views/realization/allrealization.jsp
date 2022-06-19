@@ -15,20 +15,18 @@
 <body>
 <h3> LINKI DODANE DO REALIZACJI </h3>
 <br>
-<br>
 <table border="1">
     <thead>
-    <th>LINK ID </th>
+<%--    <th>LINK ID </th>--%>
     <th>NAZWA</th>
     <th>LINK</th>
-    <th>KOSZT </th>
+    <th>KOSZT <br>W PLN</th>
     <th>SZACOWANY CZAS NAUKI <br>(W GODZINACH) <br> </th>
-    <th>REALIZACJA ID</th>
+<%--    <th>REALIZACJA ID</th>--%>
     <th>PLANOWANE TERMINY</th>
     <th>NOTATKI W CZASIE NAUKI</th>
     <th>USUŃ Z REALIZOWANYCH</th>
     <th>EDYTUJ REALIZACJĘ</th>
-
     <th>DODAJ OCENĘ</th>
 
 
@@ -36,12 +34,12 @@
     <tbody>
     <c:forEach items="${realization}" var="realization">
         <tr>
-            <td><c:out value="${realization.link.id}"/></td>
+<%--            <td><c:out value="${realization.link.id}"/></td>--%>
             <td><c:out value="${realization.link.nazwa}"/></td>
             <td><c:out value="${realization.link.link}"/></td>
             <td><c:out value="${realization.link.kosztPLN}"/></td>
             <td><c:out value="${realization.link.czasNauki}"/></td>
-            <td><c:out value="${realization.id}"/></td>
+<%--            <td><c:out value="${realization.id}"/></td>--%>
             <td><c:out value="${realization.planowaneTerminy}"/></td>
             <td><c:out value="${realization.naukaNotatki}"/></td>
             <td><a href="/Home/realization/delete/${realization.id}">Usuń </a></td>
@@ -58,13 +56,45 @@
 
         </tr>
     </c:forEach>
-    </tbody>
-</table>
+</tbody>
+    <table/>
+
 <br>
+    <br>
+
+    <table border="1">
+        <thead>
+        <th>RAZEM KOSZTY <br>(W PLN)</th>
+        <th>ŁĄCZNY SZACOWANY <br>CZAS NAUKI <br>(W GODZINACH)</th>
+        </thead>
+<tbody>
+    <c:set var="total" value="${0}"/>
+    <c:forEach items="${realization}" var="realization" >
+        <c:set var="total" value="${total + realization.link.kosztPLN}" />
+    </c:forEach>
+  <tr>
+    <td>
+        ${total}
+    </td>
+
+      <c:set var="total2" value="${0}"/>
+      <c:forEach items="${realization}" var="realization">
+          <c:set var="total2" value="${total2 + realization.link.czasNauki}" />
+      </c:forEach>
+      <td>
+          ${total2}
+      </td>
+  </tr>
+
+    </tbody>
+<table/>
+<br>
+    <br>
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
 <a href="/Home/links/all"> Wszystkie linki </a><br>
 <br> <a href="/Home/rating/all"> Linki ocenione </a> <br>
-</body>
+
+<%--</body>--%>
 </html>

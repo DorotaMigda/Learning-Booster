@@ -37,7 +37,7 @@
     </div>
     <div>
         <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
-        <form:input path="wstepnaOcena" id="wstepnaOcena" type="number"/>
+        <form:input path="wstepnaOcena" id="wstepnaOcena" type="number" min="1" max="3"/>
         <form:errors path="wstepnaOcena"/>
     </div>
 

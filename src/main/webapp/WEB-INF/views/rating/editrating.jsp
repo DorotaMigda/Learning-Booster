@@ -2,9 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ taglib prefix="form"
-
-           uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 
@@ -35,8 +33,8 @@
 
     <h2>EDYTUJ OCENĘ I NOTATKI</h2>
 
-    <label for="ocenaKoncowa">OCENA KOŃCOWA</label>
-    <form:input path="ocenaKoncowa" type="number"/>
+    <label for="ocenaKoncowa">OCENA KOŃCOWA (najniższa 1, najwyższa 3)</label>
+    <form:input path="ocenaKoncowa" type="number" min="1" max="3"/>
     <form:errors path="ocenaKoncowa"/><br/>
 
     <label for="ocenaNotatki">NOTATKI PO REALIZACJI</label>

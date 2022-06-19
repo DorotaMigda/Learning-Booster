@@ -2,9 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ taglib prefix="form"
-
-           uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 
@@ -36,7 +34,6 @@
     <form:errors path="link"/><br/>
 
     <label for="kosztPLN">KOSZT W PLN</label>
-<%--    <form:input path="kosztPLN"/>--%>
     <form:input path="kosztPLN" type="number" min="0" step=".01"/>
     <form:errors path="kosztPLN"/><br/>
 
@@ -46,11 +43,10 @@
 
     <label for="deadline">DEADLINE NA DECYZJĘ</label>
     <form:input path="deadline" id="deadline" type="date"/>
-<%--    <form:input path="deadline"/>--%>
     <form:errors path="deadline"/><br/>
 
     <label for="wstepnaOcena">WSTĘPNA OCENA (1 najniższa, 2 średnia, 3 najwyższa)</label>
-    <form:input path="wstepnaOcena" type="number"/>
+    <form:input path="wstepnaOcena" type="number" min="1" max="3"/>
     <form:errors path="wstepnaOcena"/><br/>
 
     <label for="rodzaj">RODZAJ (książka, film, kurs stacjonarny)</label>

@@ -12,19 +12,14 @@
 <form:form method="post" modelAttribute="ocena">
 
 
-
 <%--    <form:hidden path="id"/>--%>
 <%--    <form:hidden path="link.id"/>--%>
     <h3> DODAJ DO OCENY </h3>
 
-<%-- <label for="link.nazwa">NAZWA</label>--%>
-<%--<form:input path="link.nazwa" id="link.nazwa" type="text"/>--%>
-<%--<form:errors path="link.nazwa"/><br/>--%>
-
 
     <div>
         <label for="ocenaKoncowa">OCENA KOŃCOWA (1 najniższa, 3 najwyższa) </label>
-        <form:input path="ocenaKoncowa" id="ocenaKoncowa" type="number"/>
+        <form:input path="ocenaKoncowa" id="ocenaKoncowa" type="number" min="1" max="3"/>
         <form:errors path="ocenaKoncowa"/>
     </div>
 
