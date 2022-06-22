@@ -13,7 +13,7 @@
     <title> DODANE DO REALIZACJI </title>
 </head>
 <body>
-<h3> LINKI DODANE DO REALIZACJI </h3>
+<center><h3> ZADANIA DODANE DO REALIZACJI </h3></center>
 <br>
 <table border="1">
     <thead>
@@ -88,13 +88,15 @@
 
     </tbody>
 <table/>
+
+
 <br>
     <br>
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
-<a href="/Home/links/all"> Wszystkie linki </a><br>
-<br> <a href="/Home/rating/all"> Linki ocenione </a> <br>
+<a href="/Home/links/all"> Wszystkie zadania </a><br>
+<br> <a href="/Home/rating/all"> Zadania ocenione </a> <br>
 
 <%--</body>--%>
 </html>

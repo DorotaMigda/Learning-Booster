@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>DODAJ DO OCENY </title>
+    <title>DODAJ OCENĘ </title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 
 <%--    <form:hidden path="id"/>--%>
 <%--    <form:hidden path="link.id"/>--%>
-    <h3> DODAJ DO OCENY </h3>
+    <h3> DODAJ OCENĘ </h3>
 
 
     <div>
@@ -40,10 +40,10 @@
 <br>
 
 <br>
-<a href="/Home/links/all"> Wszystkie linki </a>
+<a href="/Home/links/all"> Wszystkie zadania </a>
 <br>
 
-<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
+<br> <a href ="/Home/realization/all">Zadania dodane do realizacji</a> <br>
 
 </body>
 </html>

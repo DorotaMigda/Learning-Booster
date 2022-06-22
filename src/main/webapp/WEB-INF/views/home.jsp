@@ -17,11 +17,11 @@
 </head>
 <body>
 <c:url var="home_url" value="/"/>
-<h3> LEARNING BOOSTER <br> STRONA GŁÓWNA </h3>
-<br> <a href=links/add> Dodaj nowy link </a> <br>
-<br> <a href =links/all\> Wszystkie linki </a> <br>
-<br> <a href =realization/all>Linki dodane do realizacji</a><br>
-<br> <a href =rating/all\> Linki ocenione </a> <br>
+<center> <h1> LEARNING BOOSTER STRONA GŁÓWNA </h1></center><br><br>
+<center><br> <h2><a href=links/add> Dodaj nowe zadanie </a></h2> <br><br>
+<br> <h2><a href =links/all\> Wszystkie zadania </a> </h2><br><br>
+<br> <h2><a href =realization/all>Zadania dodane do realizacji</a></h2><br><br>
+<br> <h2><a href =rating/all\> Zadania ocenione </a> </h2><br></center>
 </body>
 </html>
 

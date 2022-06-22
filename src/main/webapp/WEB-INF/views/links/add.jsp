@@ -3,12 +3,12 @@
 
 <html>
 <head>
-    <title>DODAJ NOWY LINK</title>
+    <title>DODAJ NOWE ZADANIE</title>
 </head>
 <body>
 <form:form method="post" modelAttribute="link">
 
-    <h3> DODAJ NOWY LINK </h3>
+    <h3> DODAJ NOWE ZADANIE </h3>
     <br>
     <div>
         <label for="nazwa">NAZWA</label>
@@ -68,10 +68,8 @@
 </form:form>
 <br>
 <a href="/Home/"> Powrót na stronę główną </a>
-<br>
-
-<br>
-<a href="/Home/links/all"> Wszystkie linki </a>
+<br><br>
+<a href="/Home/links/all"> Wszystkie zadania </a>
 <br>
 
 </body>

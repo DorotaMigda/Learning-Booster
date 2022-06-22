@@ -1,11 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
+<center>
 <head>
-    <title>WSZYSTKIE LINKI </title>
+    <title>WSZYSTKIE ZADANIA </title>
 </head>
 <body>
-<h3> WSZYSTKIE LINKI </h3>
+<h3> WSZYSTKIE ZADANIA </h3>
 <br>
 <br>
 <table border="1">
@@ -59,14 +60,16 @@
     </c:forEach>
     </tbody>
 </table>
+</center>
 <br>
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
-<a href="/Home/links/add"> Dodaj nowy link </a> <br>
+<a href="/Home/links/add"> Dodaj nowe zadanie </a> <br>
 
-<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
-<br> <a href ="/Home/rating/all">Linki ocenione</a>
+<br> <a href ="/Home/realization/all">Zadania dodane do realizacji</a> <br>
+<br> <a href ="/Home/rating/all">Zadania ocenione</a>
 </body>
+
 </html>
 

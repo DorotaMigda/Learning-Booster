@@ -6,9 +6,11 @@
     <title> OCENIONE </title>
 </head>
 <body>
-<h3> LINKI OCENIONE</h3>
+
+<center><h3> ZADANIA OCENIONE</h3></center>
 <br>
 <br>
+<center>
 <table border="1">
     <thead>
 <%--    <th>LINK ID </th>--%>
@@ -38,12 +40,13 @@
     </c:forEach>
     </tbody>
 </table>
-<br>
+</center>
+<br><br><br>
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 <br>
-<a href="/Home/links/all"> Wszystkie linki </a><br>
+<a href="/Home/links/all"> Wszystkie zadania </a><br>
 
-<br> <a href =/Home/realization/all> Linki dodane do realizacji </a>
+<br> <a href =/Home/realization/all> Zadania dodane do realizacji </a>
 </body>
 </html>

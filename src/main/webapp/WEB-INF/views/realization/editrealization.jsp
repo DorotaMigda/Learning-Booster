@@ -53,11 +53,11 @@
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 
-<br> <a href =/Home/links/all\> Wszystkie linki </a>
+<br> <a href =/Home/links/all\> Wszystkie zadania </a>
 
 <br>
 
-<br> <a href =/Home/realization/all> Linki dodane do realizacji </a>
+<br> <a href =/Home/realization/all> Zadania dodane do realizacji </a>
 </body>
 
 </html>

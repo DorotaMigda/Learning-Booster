@@ -45,10 +45,10 @@
 <br>
 
 <br>
-<a href="/Home/links/all"> Powrót na stronę wszystkich linków </a>
+<a href="/Home/links/all"> Wszystkie zadania </a>
 <br>
 
-<br> <a href ="/Home/realization/all">Linki dodane do realizacji</a> <br>
+<br> <a href ="/Home/realization/all">Zadania dodane do realizacji</a> <br>
 
 </body>
 </html>

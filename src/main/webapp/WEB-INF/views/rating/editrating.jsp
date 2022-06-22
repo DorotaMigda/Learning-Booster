@@ -51,15 +51,15 @@
 <br>
 
 
-<br> <a href =/Home/links/all\> Powrót na stronę wszystkich linków </a>
+<br> <a href =/Home/links/all\> Wszystkie zadania </a>
 
 <br>
 
-<br> <a href =/Home/realization/all> Powrót na stronę linków dodanych do realizacji </a>
+<br> <a href =/Home/realization/all> Zadania dodane do realizacji </a>
 
 <br>
 
-<br> <a href =/Home/rating/all> Powrót na stronę linków dodanych do oceny </a>
+<br> <a href =/Home/rating/all> Zadania ocenione </a>
 
 </body>
 

@@ -8,7 +8,7 @@
 
 <head>
 
-    <title>EDYCJA LINKÓW </title>
+    <title>EDYCJA ZADAŃ </title>
 
 </head>
 
@@ -16,7 +16,7 @@
 
 <c:url var="edit_url" value="/links/edit"/>
 
-<h3> EDYTUJ LINK </h3>
+<h3> EDYTUJ ZADANIE </h3>
 <br>
 <br>
 
@@ -74,7 +74,7 @@
 <a href="/Home/"> Powrót na stronę główną </a>
 <br>
 
-<br> <a href =/Home/links/all\> Powrót na stronę wszystkich linków </a>
+<br> <a href =/Home/links/all\> Wszystkie zadania </a>
 </body>
 
 </html>
